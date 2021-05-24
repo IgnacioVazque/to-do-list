@@ -1,7 +1,7 @@
 const HtmlWebpack          = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin           = require('copy-webpack-plugin');
-const SourceMapDevToolPlugin = require("webpack");
+// const SourceMapDevToolPlugin = require("webpack");
 
 module.exports = {
 
@@ -37,11 +37,11 @@ module.exports = {
                 loader: 'file-loader',
             },
             // fix console error: "DevTools failed to load sourceMap"
-            {
-                test: /\.js$/,
-                enforce: 'pre',
-                use: ['source-map-loader'],
-            }
+            // {
+            //     test: /\.js$/,
+            //     enforce: 'pre',
+            //     use: ['source-map-loader'],
+            // }
         ]
     },
 
@@ -65,9 +65,9 @@ module.exports = {
             ]
         }),
 
-        new SourceMapDevToolPlugin({
-            filename: "[file].map"
-        })
+        // new SourceMapDevToolPlugin({
+        //     filename: "[file].map"
+        // })
         
     ]
 }
