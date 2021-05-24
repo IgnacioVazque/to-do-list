@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# To-do list
-=======
-# Cascarón webpack 📜:
->>>>>>> a3008e63cdff61a0dfb47e241c63938fc000e1b7
+# To-do list :scroll
 
 Proyecto de lista de tareas  :scroll
 
